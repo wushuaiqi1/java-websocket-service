@@ -77,7 +77,7 @@
                 <!--需指定版本 版本过高可能会导致编译失败-->
                 <version>2.6.3</version>
                 <configuration>
-                    <mainClass>org.sky.SkyVideoApp</mainClass>
+                    <mainClass>com.ws.WebsocketApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
