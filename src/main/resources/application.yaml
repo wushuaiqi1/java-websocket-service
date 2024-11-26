@@ -1,0 +1,19 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  # mysql配置，url中配置数据库名，username是账号，password是密码
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DATASOURCE_HOST:127.0.0.1:3306}/${DATASOURCE_NAME:forge}
+    username: ${DATASOURCE:root}
+    password: ${DATASOURCE_PASSWORD:}
+  redis:
+    host: ${REDIS_HOST:127.0.0.1}
+    port: ${REDIS_PORT:6379}
+    password: ${REDIS_PASSWORD:123456}
+
+
+# 服务端对外暴露的端口
+server:
+  port: ${SERVER_PORT:8882}
