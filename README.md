@@ -12,8 +12,7 @@ WebSocket协议是RFC6455草案的内容，由IETF发布，于2011年11月。
 
 需要注意，使用nginx代理服务，需要配置WS服务的具体的ip/端口。
 
-# tools
-```shell
-git add .;git commit -m push;git pull;git push
-```
+# WebSocket官方文档
+https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/socket/WebSocketSession.html
+
 
