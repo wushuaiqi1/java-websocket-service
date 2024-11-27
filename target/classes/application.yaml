@@ -17,3 +17,17 @@ spring:
 # 服务端对外暴露的端口
 server:
   port: ${SERVER_PORT:8882}
+
+
+# actuator监控
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
