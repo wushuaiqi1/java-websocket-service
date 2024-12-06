@@ -24,9 +24,9 @@ public class WebSocketHandshakeInterceptor implements HandshakeInterceptor {
     public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Map<String, Object> attributes) throws Exception {
 
         List<String> authorization = request.getHeaders().get("authorization");
-        if (Objects.nonNull(authorization)){
+        if (Objects.nonNull(authorization)) {
             // 参数填充
-            attributes.put("authorization",authorization.get(0));
+            attributes.put("authorization", authorization.get(0));
         }
         // if return false，program will return else go on。
         log.info("beforeHandshake {}", DateUtils.CurrentTime());
